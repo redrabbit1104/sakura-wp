@@ -90,6 +90,10 @@ function create_post_type() {
         'public'        => true,  // 投稿タイプをpublicにするか
         'has_archive'   => false, // アーカイブ機能ON/OFF
         'menu_position' => 5,     // 管理画面上での配置場所
+				'menu_icon' => 'dashicons-universal-access', //メニューのアイコンを指定
+				'supports' => ['thumbnail', 'title', 'editor','page-attributes'],     //title,editor,thumbnailなどを指定
+				'has_archive' => true,
+				'hierarchical' => true,
         'show_in_rest'  => true,  // 5系から出てきた新エディタ「Gutenberg」を有効にする
     ]);
 		register_post_type( 'travel', [ // 投稿タイプ名の定義
@@ -100,6 +104,10 @@ function create_post_type() {
 			'public'        => true,  // 投稿タイプをpublicにするか
 			'has_archive'   => false, // アーカイブ機能ON/OFF
 			'menu_position' => 6,     // 管理画面上での配置場所
-			'show_in_rest'  => true,  // 5系から出てきた新エディタ「Gutenberg」を有効にする
-	]);
+			'menu_icon' => 'dashicons-universal-access', //メニューのアイコンを指定
+			'supports' => ['thumbnail', 'title', 'editor','page-attributes'],     //title,editor,thumbnailなどを指定
+			'has_archive' => true,
+			'hierarchical' => true,
+      'show_in_rest'  => true,  // 5系から出てきた新エディタ「Gutenberg」を有効にする
+    ]);
 }
