@@ -5,7 +5,6 @@
 
 <div class="myposthead">
 <h1>最新情報</h1>
-<p>RECENT</p>
 </div>
 
 <div class="mypostlist">

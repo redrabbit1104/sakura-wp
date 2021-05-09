@@ -7,9 +7,9 @@ the_post(); ?>
 
 <div class="myposthead">
 <h1><?php the_title(); ?></h1>
-<p>
-<?php echo esc_html( strtoupper( get_post_field( 'post_name' ) ) ); ?>
-</p>
+<!-- <p> -->
+<!-- <?php echo esc_html( strtoupper( get_post_field( 'post_name' ) ) ); ?> -->
+<!-- </p> -->
 </div>
 
 <?php the_content(); ?>
